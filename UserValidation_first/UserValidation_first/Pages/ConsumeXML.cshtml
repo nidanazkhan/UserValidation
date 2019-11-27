@@ -1,0 +1,14 @@
+﻿@page
+@model UserValidation_first.Pages.ConsumeXMLModel
+@{
+    ViewData["Title"] = "ConsumeXML";
+    var result = ViewData["result"];
+}
+
+<h1>ConsumeXML</h1>
+<p>Upload your XML file!</p>
+<p>XML Validation: @result</p>
+<form method="post" enctype="multipart/form-data">
+    <input type="file" asp-for="Upload" />
+    <input type="submit" />
+</form>

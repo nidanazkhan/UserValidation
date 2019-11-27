@@ -1,0 +1,29 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<?xml-stylesheet type="text/xsl" href="uservalidation.xsl"?>
+<users xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+	xsi:noNamespaceSchemaLocation="uservalidation(1).xsd">
+  <user>
+    <firstname>Nikita</firstname>
+    <lastname>Ahuja</lastname>
+    <bearcatid>M13480138</bearcatid>
+    <favoriteshortcut>Alt + Space followed by C</favoriteshortcut>
+  </user>
+  <user>
+    <firstname>Aishwarya</firstname>
+    <lastname>Ghumekar</lastname>
+    <bearcatid>M13262448</bearcatid>
+    <favoriteshortcut>Ctrl + </favoriteshortcut>
+  </user>
+  <user>
+    <firstname>Sreejith</firstname>
+    <lastname>Nair</lastname>
+    <bearcatid>M13451169</bearcatid>
+    <favoriteshortcut>Ctrl+C and Ctrl+V</favoriteshortcut>
+  </user>
+  <user>
+    <firstname>Nida</firstname>
+    <lastname>Khan</lastname>
+    <bearcatid>M12962725</bearcatid>
+    <favoriteshortcut>Windows + Shift + S</favoriteshortcut>
+  </user>
+</users>
