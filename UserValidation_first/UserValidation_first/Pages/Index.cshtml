@@ -35,7 +35,7 @@
         </div>
     </div>
 
-    <table id="demo"></table>
+    
     <script>
         function loadXMLDoc() {
             var xmlhttp = new XMLHttpRequest();
@@ -50,17 +50,13 @@
         function myFunction(xml) {
             var i;
             var xmlDoc = xml.responseXML;
-            var table = "<tr><th>First Name</th><th>Last Name</th><th>bearcatid</th><th>favorite shortcut</th></tr>";
+            var table = "<tr><th>First Name</th><th>Last Name</th></tr>";
             var x = xmlDoc.getElementsByTagName("user");
             for (i = 0; i < x.length; i++) {
                 table += "<tr><td>" +
                     x[i].getElementsByTagName("firstname")[0].childNodes[0].nodeValue +
                     "</td><td>" +
                     x[i].getElementsByTagName("lastname")[0].childNodes[0].nodeValue +
-                    "</td></tr>" +
-                    x[i].getElementsByTagName("bearcatid")[0].childNodes[0].nodeValue +
-                    "</td></tr>" +
-                    x[i].getElementsByTagName("favoriteshortcut")[0].childNodes[0].nodeValue +
                     "</td></tr>";
             }
             document.getElementById("demo").innerHTML = table;
